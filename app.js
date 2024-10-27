@@ -73,7 +73,7 @@ app.post('/holiday-calendar', async (req, res) => {
 });
 
 // Schedule login and retrieval of the holiday calendar at 2:47 PM
-schedule.scheduleJob('16 15 * * *', async () => { // 2:47 PM in 24-hour format
+schedule.scheduleJob('38 15 * * *', async () => { // 2:47 PM in 24-hour format
     console.log("Automated login attempt at 2:47 PM...");
     const holidayCalendar = await loginAndGetHolidayCalendar();
     if (holidayCalendar) {
