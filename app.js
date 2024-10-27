@@ -10,6 +10,9 @@ app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
+app.get('/',(req,res) => {
+    res.send('hello');
+})
 // Debugging: Log the username and password
 console.log('Username:', process.env.MY_USERNAME);
 console.log('Password:', process.env.MY_PASSWORD);
